@@ -12,6 +12,7 @@ const pages = [
 
 const nextTag = document.querySelector("div img.is-next")
 const prevTag = document.querySelector("div img.is-previous")
+const randomTag = document.querySelector("div img.is-random")
 const outputTag = document.querySelector("p")
 const circleTag = document.querySelector("div.slide_circle")
 const bodyTag = document.querySelector("body")
@@ -38,6 +39,15 @@ const previous = function () {
   updateSection()
 }
 
+// to pick a random slide
+const random = function () {
+  pageNumber = Math.floor(Math.random() * pages.length)
+
+  updateSection()
+}
+
+
+// this will update the slider's content and style
 const updateSection = function () {
   outputTag.innerHTML = pages[pageNumber].copy
   circleTag.style.backgroundColor = pages[pageNumber].circleColor
@@ -52,4 +62,9 @@ nextTag.addEventListener("click", function () {
 // event listener for previous tag for output to middle paragraph
 prevTag.addEventListener("click", function () {
   previous()
+})
+
+// event listener for random tag
+randomTag.addEventListener("click", function () {
+  random()
 })
