@@ -68,3 +68,16 @@ prevTag.addEventListener("click", function () {
 randomTag.addEventListener("click", function () {
   random()
 })
+
+// user can switch slides using keyboard
+document.addEventListener("keyup", function (event) {
+  console.log(event)
+
+  if (event.key == "ArrowRight") {
+    next()
+  }
+
+  if (event.key == "ArrowLeft") {
+    previous()
+  }
+})
