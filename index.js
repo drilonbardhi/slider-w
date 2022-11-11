@@ -3,11 +3,11 @@ let pageNumber = 0
 
 // content for pages
 const pages = [
-  'a Londoner',
-  'a webflow developer',
-  'a JS developer',
-  'looking for a job',
-  'positive!'
+  { copy: "a Londoner"},
+  { copy: "a foodie"},
+  { copy: "a JS developer"},
+  { copy: "looking for a job"},
+  { copy: "positive!"}
 ]
 
 const nextTag = document.querySelector("div img.is-next")
@@ -37,7 +37,7 @@ const previous = function () {
 }
 
 const updateSection = function () {
-  outputTag.innerHTML = pages[pageNumber]
+  outputTag.innerHTML = pages[pageNumber].copy
 }
 
 // event listener for next tag for output to middle paragraph
