@@ -5,8 +5,8 @@ let pageNumber = 0
 const pages = [
   { copy: "a Cybersecurity Researcher", bgColor: "#edc7a9", circleColor: "#3e78ed"},
   { copy: "a Father to a Curious Toddler", bgColor: "#a1fffe", circleColor: "#e34a47"},
-  { copy: "a passionate about Digital Privacy", bgColor: "#d3c7f3", circleColor: "#f7fe00"},
-  { copy: "open to Collaborations Worldwide", bgColor: "#faffb8", circleColor: "#b472e6"},
+  { copy: "passionate about Digital Privacy", bgColor: "#d3c7f3", circleColor: "#f7fe00"},
+  { copy: "open to Collaborations", bgColor: "#faffb8", circleColor: "#b472e6"},
   { copy: "building AI-Powered Defenses", bgColor: "#fde68a", circleColor: "#6366f1" },
   { copy: "on a Mission to Secure the Future", bgColor: "#f87171", circleColor: "#0ea5e9" }
 
